@@ -1,0 +1,49 @@
+Call:
+glm(formula = unemp ~ INCOME + YR_OUT + AFQT + ASVAB + AGE_ENT + 
+    marriage + region + industry + health, family = binomial, 
+    data = project)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.6847  -0.9506  -0.5768   1.0845   2.6089  
+
+Coefficients:
+                                                          Estimate Std. Error  z value 	Pr(>|z|) 
+(Intercept)                                              2.936e+00  3.889e-01  7.550   	4.36e-14 ***
+INCOME                                                  -2.987e-05  3.582e-06 -8.338  	< 2e-16  ***
+YR_OUT                                                   1.764e-01  3.508e-02  5.029 	4.93e-07 ***
+AFQT                                                    -9.153e-06  2.038e-06 -4.491 	7.08e-06 ***
+ASVAB                                                   -8.104e-03  3.701e-03 -2.190  	0.02853	 *
+AGE_ENT                                                 -1.121e-01  1.569e-02 -7.143 	9.12e-13 ***
+marriageNever married                                    4.689e-01  1.019e-01  4.601 	4.20e-06 ***
+marriageOther                                            3.756e-01  1.389e-01  2.704 	0.00685  ** 
+regionNortheast                                          1.270e-02  1.398e-01  0.091 	0.92763	
+regionSouth                                             -3.435e-01  1.159e-01 -2.964    0.00303  ** 
+regionWest                                              -8.609e-02  1.314e-01 -0.655  	0.51241 
+industryBusiness and Repair Services                     1.909e-01  2.338e-01  0.817  	0.41416
+industryConstruction                                     3.064e-01  2.224e-01  1.378  	0.16819  
+industryEntertainment and Recreation Services           -4.020e-01  2.999e-01 -1.340  	0.18020 
+industryFinance, Insurance, and Real Estate             -1.868e-01  3.865e-01 -0.483 	0.62889 
+industryManufacturing                                    5.019e-01  1.909e-01  2.629  	0.00856 **
+industryMining                                           1.367e+00  6.670e-01  2.050  	0.04040 * 
+industryPersonal Services                               -1.214e-03  2.521e-01 -0.005  	0.99616
+industryProfessional and Related Services                6.695e-02  2.045e-01  0.327  	0.74336 
+industryPublic Administration                            8.498e-02  2.348e-01  0.362  	0.71744 
+industryTransportation, Communication, Public Utilities  9.506e-02  3.009e-01  0.316  	0.75205 
+industryWholesale and Retail Trade                      -1.524e-02  1.724e-01 -0.088  	0.92959
+healthYes                                                4.788e-01  2.642e-01  1.812  	0.07001 .
+                                                           
+
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3414.1  on 2510  degrees of freedom
+Residual deviance: 2979.6  on 2488  degrees of freedom
+AIC: 3025.6
+
+Number of Fisher Scoring iterations: 4
+
+
+
+
