@@ -1,0 +1,52 @@
+model1 = glm(unemp~YR_OUT+health+marriage+region+industry+highestgrade+race,data=project,family=binomial)
+model2 = glm(unemp~YR_OUT+health+marriage+industry+highestgrade+race,data=project,family=binomial)
+model3 = glm(unemp~YR_OUT+health+marriage+region+industry+highestgrade+race+urb,data=project,family=binomial)
+model4 = glm(unemp~YR_OUT+health+marriage+industry+highestgrade+race+urb,data=project,family=binomial)
+model5 = glm(unemp~YR_OUT+health+marriage+region+highestgrade+race,data=project,family=binomial)
+
+model6 = glm(unemp~INCOME+health+marriage+region+industry+highestgrade+race,data=project,family=binomial)
+model7 = glm(unemp~INCOME+health+marriage+region+highestgrade+race,data=project,family=binomial)
+model8 = glm(unemp~INCOME+health+marriage+industry+highestgrade+race,data=project,family=binomial)
+model9 = glm(unemp~INCOME+health+marriage+highestgrade+race,data=project,family=binomial)
+model10 = glm(unemp~INCOME+health+marriage+region+industry+highestgrade+race+urb,data=project,family=binomial)
+
+Top models are ones with Income and YR_OUT
+K fold cross validation results with K=251
+Alpha levels tested:
+[1] 0.36, 0.38, 0.4, 0.42, 0.44, 0.46, 0.48, 0.5, 0.52, 0.54, 0.56, 0.58, 0.6
+YR_OUT Models
+ [1] 0.3767423 0.3659896 0.3572282 0.3528475 0.3496615 0.3492632 0.3536440 0.3532457 0.3544405 0.3560335 0.3620072 0.3651932 0.3655914
+ [1] 0.3886898 0.3743528 0.3580247 0.3556352 0.3412983 0.3480685 0.3452808 0.3508562 0.3632019 0.3580247 0.3616089 0.3667861 0.3659896
+ [1] 0.3771406 0.3667861 0.3572282 0.3532457 0.3532457 0.3488650 0.3552370 0.3552370 0.3548387 0.3564317 0.3616089 0.3671844 0.3667861
+ [1] 0.3926722 0.3787336 0.3584229 0.3532457 0.3424930 0.3412983 0.3484667 0.3524492 0.3639984 0.3580247 0.3616089 0.3671844 0.3675826
+ [1] 0.3922740 0.3632019 0.3572282 0.3540422 0.3544405 0.3504580 0.3488650 0.3556352 0.3540422 0.3600159 0.3584229 0.3651932 0.3671844
+INCOME Models
+ [1] 0.3922740 0.3632019 0.3572282 0.3540422 0.3544405 0.3504580 0.3488650 0.3556352 0.3540422 0.3600159 0.3584229 0.3651932 0.3671844
+ [1] 0.3843090 0.3723616 0.3632019 0.3496615 0.3440860 0.3440860 0.3412983 0.3412983 0.3436878 0.3492632 0.3544405 0.3580247 0.3671844
+ [1] 0.3938670 0.3739546 0.3679809 0.3572282 0.3504580 0.3464755 0.3492632 0.3444843 0.3464755 0.3412983 0.3432895 0.3480685 0.3568299
+ [1] 0.3894863 0.3747511 0.3604142 0.3508562 0.3448825 0.3440860 0.3393070 0.3424930 0.3452808 0.3472720 0.3560335 0.3639984 0.3671844
+ [1] 0.3902828 0.3815213 0.3695739 0.3592194 0.3488650 0.3480685 0.3416965 0.3476703 0.3405018 0.3440860 0.3452808 0.3540422 0.3632019
+ [1] 0.3847073 0.3731581 0.3651932 0.3480685 0.3456790 0.3428913 0.3416965 0.3424930 0.3456790 0.3492632 0.3536440 0.3572282 0.3679809
+
+[1] 0.6507368
+[1] 0.46
+[1] 0.6587017
+[1] 0.44
+[1] 0.651135
+[1] 0.46
+[1] 0.6587017
+[1] 0.46
+[1] 0.651135
+[1] 0.48
+[1] 0.6587017
+[1] 0.5
+[1] 0.6587017
+[1] 0.54
+[1] 0.660693
+[1] 0.48
+[1] 0.6594982
+[1] 0.52
+[1] 0.6583035
+[1] 0.48
+
+
