@@ -23,13 +23,8 @@ attach(project)
 sapply(project, class)
 
 
-model1 = glm(unemp~INCOME+YR_OUT+AFQT+ASVAB+AGE_ENT+marriage+region+industry+health,data=project,family=binomial)
-model2 = glm(unemp~INCOME+YR_OUT+AFQT+ASVAB+AGE_ENT+marriage+region+industry+health+race,data=project,family=binomial)
-model3 = glm(unemp~INCOME+YR_OUT+AFQT+ASVAB+AGE_ENT+marriage+region+industry,data=project,family=binomial)
-model4 = glm(unemp~INCOME+YR_OUT+AFQT+ASVAB+AGE_ENT+marriage+region+industry+health+urb,data=project,family=binomial)
-model5 = glm(unemp~INCOME+YR_OUT+AFQT+ASVAB+AGE_ENT+marriage+region+industry+race,data=project,family=binomial)
+model8 = glm(unemp~INCOME+health+marriage+industry+highestgrade+race,data=project,family=binomial)
+
+summary(model8)
 
 
-summary(model1)
-
-summary(model2)

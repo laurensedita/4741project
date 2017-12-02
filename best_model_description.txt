@@ -1,0 +1,62 @@
+Call:
+glm(formula = unemp ~ INCOME + health + marriage + industry + 
+    highestgrade + race, family = binomial, data = project)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.8408  -0.9864  -0.6590   1.1026   2.6237  
+
+Coefficients:
+                                                          Estimate Std. Error
+(Intercept)                                             -3.202e-03  2.159e-01
+INCOME                                                  -2.977e-05  3.400e-06
+healthYes                                                6.516e-01  2.513e-01
+marriageNever married                                    4.762e-01  1.000e-01
+marriageOther                                            3.955e-01  1.356e-01
+industryBusiness and Repair Services                     6.189e-02  2.285e-01
+industryConstruction                                     1.375e-01  2.161e-01
+industryEntertainment and Recreation Services           -4.767e-01  2.912e-01
+industryFinance, Insurance, and Real Estate             -9.671e-02  3.815e-01
+industryManufacturing                                    4.017e-01  1.860e-01
+industryMining                                           1.066e+00  6.480e-01
+industryPersonal Services                                9.691e-02  2.448e-01
+industryProfessional and Related Services               -2.893e-02  2.031e-01
+industryPublic Administration                           -8.388e-02  2.304e-01
+industryTransportation, Communication, Public Utilities -5.450e-02  2.929e-01
+industryWholesale and Retail Trade                      -8.342e-02  1.680e-01
+highestgradeHigh school                                  2.706e-01  1.044e-01
+highestgradeLess than high school                        5.759e-01  1.280e-01
+raceHispanic                                            -3.696e-02  1.334e-01
+raceNon-Black, Non-Hispanic                             -3.180e-01  1.102e-01
+                                                        z value Pr(>|z|)    
+(Intercept)                                              -0.015  0.98817    
+INCOME                                                   -8.754  < 2e-16 ***
+healthYes                                                 2.594  0.00950 ** 
+marriageNever married                                     4.762 1.92e-06 ***
+marriageOther                                             2.917  0.00354 ** 
+industryBusiness and Repair Services                      0.271  0.78651    
+industryConstruction                                      0.636  0.52477    
+industryEntertainment and Recreation Services            -1.637  0.10164    
+industryFinance, Insurance, and Real Estate              -0.254  0.79987    
+industryManufacturing                                     2.160  0.03074 *  
+industryMining                                            1.645  0.10007    
+industryPersonal Services                                 0.396  0.69214    
+industryProfessional and Related Services                -0.142  0.88673    
+industryPublic Administration                            -0.364  0.71576    
+industryTransportation, Communication, Public Utilities  -0.186  0.85239    
+industryWholesale and Retail Trade                       -0.497  0.61942    
+highestgradeHigh school                                   2.591  0.00957 ** 
+highestgradeLess than high school                         4.499 6.84e-06 ***
+raceHispanic                                             -0.277  0.78181    
+raceNon-Black, Non-Hispanic                              -2.884  0.00392 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 3414.1  on 2510  degrees of freedom
+Residual deviance: 3097.5  on 2491  degrees of freedom
+AIC: 3137.5
+
+Number of Fisher Scoring iterations: 4
+

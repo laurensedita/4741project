@@ -1,0 +1,272 @@
+Loading required package: methods
+ [1] "CASEID"       "AGE1979"      "SAMPLE_SEX"   "SAMPLE_RACE"  "AFQT"        
+ [6] "ASVAB"        "HIGHESTGRADE" "HEALTHLIMIT"  "INCOME"       "INDUSTRY"    
+[11] "NUMJOBS"      "URBAN_RURAL"  "REGION"       "MARSTAT_COL"  "YR_ENT_LF"   
+[16] "YR_EMP"       "YR_UNEMP"     "YR_OUT"       "AGE_ENT"      "UNEMP"       
+[21] "race"         "region"       "marriage"     "unemp"        "health"      
+[26] "hgr"          "industry"     "urb"         
+The following objects are masked from project (pos = 3):
+
+    AFQT, AGE1979, AGE_ENT, ASVAB, CASEID, HEALTHLIMIT, HIGHESTGRADE,
+    INCOME, INDUSTRY, MARSTAT_COL, NUMJOBS, REGION, SAMPLE_RACE,
+    SAMPLE_SEX, UNEMP, URBAN_RURAL, YR_EMP, YR_ENT_LF, YR_OUT, YR_UNEMP
+
+
+	Pearson's Chi-squared test
+
+data:  race_region
+X-squared = 545.04, df = 6, p-value < 2.2e-16
+
+
+	Pearson's Chi-squared test
+
+data:  race_marriage
+X-squared = 168.99, df = 4, p-value < 2.2e-16
+
+
+	Pearson's Chi-squared test
+
+data:  race_health
+X-squared = 3.1844, df = 2, p-value = 0.2035
+
+
+	Pearson's Chi-squared test
+
+data:  race_hgr
+X-squared = 131.25, df = 4, p-value < 2.2e-16
+
+
+	Pearson's Chi-squared test
+
+data:  race_industry
+X-squared = 181.08, df = 22, p-value < 2.2e-16
+
+Warning message:
+In chisq.test(race_industry) : Chi-squared approximation may be incorrect
+
+	Pearson's Chi-squared test
+
+data:  race_urb
+X-squared = 89.507, df = 2, p-value < 2.2e-16
+
+
+	Pearson's Chi-squared test
+
+data:  region_marriage
+X-squared = 22.787, df = 6, p-value = 0.0008709
+
+
+	Pearson's Chi-squared test
+
+data:  region_health
+X-squared = 4.0174, df = 3, p-value = 0.2596
+
+
+	Pearson's Chi-squared test
+
+data:  region_hgr
+X-squared = 24.422, df = 6, p-value = 0.0004366
+
+
+	Pearson's Chi-squared test
+
+data:  region_industry
+X-squared = 83.096, df = 33, p-value = 3.328e-06
+
+Warning message:
+In chisq.test(region_industry) : Chi-squared approximation may be incorrect
+
+	Pearson's Chi-squared test
+
+data:  region_urb
+X-squared = 119.08, df = 3, p-value < 2.2e-16
+
+
+	Pearson's Chi-squared test
+
+data:  health_marriage
+X-squared = 19.495, df = 2, p-value = 5.845e-05
+
+
+	Pearson's Chi-squared test
+
+data:  marriage_industry
+X-squared = 42.158, df = 22, p-value = 0.005981
+
+Warning message:
+In chisq.test(marriage_industry) :
+  Chi-squared approximation may be incorrect
+
+	Pearson's Chi-squared test
+
+data:  marriage_hgr
+X-squared = 60.76, df = 4, p-value = 2.008e-12
+
+
+	Pearson's Chi-squared test
+
+data:  marriage_urb
+X-squared = 24.608, df = 2, p-value = 4.533e-06
+
+
+	Pearson's Chi-squared test
+
+data:  health_hgr
+X-squared = 2.2125, df = 2, p-value = 0.3308
+
+
+	Pearson's Chi-squared test
+
+data:  health_industry
+X-squared = 12.862, df = 11, p-value = 0.3024
+
+Warning message:
+In chisq.test(health_industry) : Chi-squared approximation may be incorrect
+
+	Pearson's Chi-squared test with Yates' continuity correction
+
+data:  health_urb
+X-squared = 9.3341e-30, df = 1, p-value = 1
+
+
+	Pearson's Chi-squared test
+
+data:  hgr_industry
+X-squared = 91.647, df = 22, p-value = 1.795e-10
+
+Warning message:
+In chisq.test(hgr_industry) : Chi-squared approximation may be incorrect
+
+	Pearson's Chi-squared test
+
+data:  hgr_urb
+X-squared = 27.224, df = 2, p-value = 1.226e-06
+
+
+	Pearson's Chi-squared test
+
+data:  industry_urb
+X-squared = 67.941, df = 11, p-value = 3.003e-10
+
+Warning message:
+In chisq.test(industry_urb) : Chi-squared approximation may be incorrect
+
+	Pearson's product-moment correlation
+
+data:  INCOME and YR_OUT
+t = -10.662, df = 2509, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.2453095 -0.1704620
+sample estimates:
+       cor 
+-0.2081905 
+
+
+	Pearson's product-moment correlation
+
+data:  INCOME and AGE_ENT
+t = -8.9926, df = 2509, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.2143394 -0.1385451
+sample estimates:
+       cor 
+-0.1767042 
+
+
+	Pearson's product-moment correlation
+
+data:  INCOME and AFQT
+t = 23.036, df = 2509, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.3850024 0.4495952
+sample estimates:
+      cor 
+0.4178267 
+
+
+	Pearson's product-moment correlation
+
+data:  INCOME and ASVAB
+t = 19.131, df = 2509, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.3221746 0.3904620
+sample estimates:
+      cor 
+0.3567948 
+
+
+	Pearson's product-moment correlation
+
+data:  AFQT and ASVAB
+t = 44.53, df = 2509, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.6419799 0.6857073
+sample estimates:
+      cor 
+0.6644119 
+
+
+	Pearson's product-moment correlation
+
+data:  AFQT and AGE_ENT
+t = -3.3131, df = 2509, p-value = 0.0009359
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.10484423 -0.02695099
+sample estimates:
+        cor 
+-0.06599815 
+
+
+	Pearson's product-moment correlation
+
+data:  AFQT and YR_OUT
+t = -6.447, df = 2509, p-value = 1.364e-10
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.16594272 -0.08898218
+sample estimates:
+       cor 
+-0.1276546 
+
+
+	Pearson's product-moment correlation
+
+data:  YR_OUT and AGE_ENT
+t = -4.0143, df = 2509, p-value = 6.136e-05
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.11863241 -0.04089744
+sample estimates:
+        cor 
+-0.07988638 
+
+
+	Pearson's product-moment correlation
+
+data:  YR_OUT and ASVAB
+t = -8.9632, df = 2509, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.2137884 -0.1379787
+sample estimates:
+       cor 
+-0.1761447 
+
+
+	Pearson's product-moment correlation
+
+data:  YR_OUT and AGE_ENT
+t = -4.0143, df = 2509, p-value = 6.136e-05
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.11863241 -0.04089744
+sample estimates:
+        cor 
+-0.07988638 
+

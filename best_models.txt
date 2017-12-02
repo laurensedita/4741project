@@ -1,0 +1,52 @@
+  INCOME health marriage region industry highestgrade race   urb Criterion
+1   TRUE   TRUE     TRUE   TRUE     TRUE         TRUE TRUE FALSE  3134.102
+2   TRUE   TRUE     TRUE   TRUE    FALSE         TRUE TRUE FALSE  3134.133
+3   TRUE   TRUE     TRUE  FALSE     TRUE         TRUE TRUE FALSE  3135.539
+4   TRUE   TRUE     TRUE  FALSE    FALSE         TRUE TRUE FALSE  3135.587
+5   TRUE   TRUE     TRUE   TRUE     TRUE         TRUE TRUE  TRUE  3136.076
+Morgan-Tatar search since family is non-gaussian.
+Note: factors present with more than 2 levels.
+  AFQT health marriage region industry highestgrade  race   urb Criterion
+1 TRUE   TRUE     TRUE   TRUE    FALSE         TRUE FALSE FALSE  3190.322
+2 TRUE   TRUE     TRUE   TRUE     TRUE         TRUE  TRUE FALSE  3190.438
+3 TRUE   TRUE     TRUE   TRUE    FALSE         TRUE  TRUE FALSE  3190.663
+4 TRUE   TRUE     TRUE  FALSE    FALSE         TRUE FALSE FALSE  3190.743
+5 TRUE   TRUE     TRUE   TRUE     TRUE         TRUE FALSE FALSE  3190.976
+Morgan-Tatar search since family is non-gaussian.
+Note: factors present with more than 2 levels.
+  ASVAB health marriage region industry highestgrade race   urb Criterion
+1  TRUE   TRUE     TRUE   TRUE     TRUE         TRUE TRUE FALSE  3192.531
+2  TRUE   TRUE     TRUE   TRUE     TRUE         TRUE TRUE  TRUE  3194.344
+3  TRUE   TRUE     TRUE  FALSE     TRUE         TRUE TRUE FALSE  3195.107
+4  TRUE   TRUE     TRUE   TRUE    FALSE         TRUE TRUE FALSE  3195.512
+5  TRUE   TRUE     TRUE  FALSE     TRUE         TRUE TRUE  TRUE  3197.107
+Morgan-Tatar search since family is non-gaussian.
+Note: factors present with more than 2 levels.
+  YR_OUT health marriage region industry highestgrade race   urb Criterion
+1   TRUE   TRUE     TRUE   TRUE     TRUE         TRUE TRUE FALSE  3160.653
+2   TRUE   TRUE     TRUE  FALSE     TRUE         TRUE TRUE FALSE  3161.213
+3   TRUE   TRUE     TRUE   TRUE     TRUE         TRUE TRUE  TRUE  3162.171
+4   TRUE   TRUE     TRUE  FALSE     TRUE         TRUE TRUE  TRUE  3163.085
+5   TRUE   TRUE     TRUE   TRUE    FALSE         TRUE TRUE FALSE  3164.121
+Morgan-Tatar search since family is non-gaussian.
+Note: factors present with more than 2 levels.
+  AGE_ENT health marriage region industry highestgrade race   urb Criterion
+1    TRUE   TRUE     TRUE   TRUE     TRUE         TRUE TRUE FALSE  3182.013
+2    TRUE   TRUE     TRUE   TRUE     TRUE         TRUE TRUE  TRUE  3183.733
+3    TRUE   TRUE     TRUE  FALSE     TRUE         TRUE TRUE FALSE  3184.216
+4    TRUE   TRUE     TRUE  FALSE     TRUE         TRUE TRUE  TRUE  3186.201
+5    TRUE  FALSE     TRUE   TRUE     TRUE         TRUE TRUE FALSE  3190.138
+
+model1 = glm(unemp~YR_OUT+health+marriage+region+industry+highestgrade+race,data=project,family=binomial)
+model2 = glm(unemp~YR_OUT+health+marriage+industry+highestgrade+race,data=project,family=binomial)
+model3 = glm(unemp~YR_OUT+health+marriage+region+industry+highestgrade+race+urb,data=project,family=binomial)
+model4 = glm(unemp~YR_OUT+health+marriage+industry+highestgrade+race+urb,data=project,family=binomial)
+model5 = glm(unemp~YR_OUT+health+marriage+region+highestgrade+race,data=project,family=binomial)
+
+model6 = glm(unemp~INCOME+health+marriage+region+industry+highestgrade+race,data=project,family=binomial)
+model7 = glm(unemp~INCOME+health+marriage+region+highestgrade+race,data=project,family=binomial)
+model8 = glm(unemp~INCOME+health+marriage+industry+highestgrade+race,data=project,family=binomial)
+model9 = glm(unemp~INCOME+health+marriage+highestgrade+race,data=project,family=binomial)
+model10 = glm(unemp~INCOME+health+marriage+region+industry+highestgrade+race+urb,data=project,family=binomial)
+
+
